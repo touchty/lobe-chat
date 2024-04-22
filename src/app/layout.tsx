@@ -1,4 +1,3 @@
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ResolvingViewport } from 'next';
 import { cookies } from 'next/headers';
 import { PropsWithChildren } from 'react';
@@ -26,7 +25,6 @@ const RootLayout = async ({ children }: PropsWithChildren) => {
           </AuthProvider>
         </GlobalProvider>
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
